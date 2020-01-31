@@ -1,21 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireAuthModule } from '@angular/fire/auth';
-import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
+const config = {
+    apiKey: "AIzaSyD9SAgXxdDnhcHk6scS6HVAav8z10-ibhk",
+    authDomain: "stackblitz-angular-firebase.firebaseapp.com",
+    databaseURL: "https://stackblitz-angular-firebase.firebaseio.com",
+    projectId: "stackblitz-angular-firebase",
+    storageBucket: "",
+    messagingSenderId: "453902784138"
+  };
+
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,
-    AngularFireModule.initializeApp(environment.firebase),
-  AngularFirestoreModule, // imports firebase/firestore, only needed database features
-  AngularFireAuthModule, // imports firebase/auth, only needed for auth features
-   ],
+  imports:      [
+   BrowserModule,
+   FormsModule,
+   AngularFireModule.initializeApp(config),
+   AngularFireDatabaseModule
+    ],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })

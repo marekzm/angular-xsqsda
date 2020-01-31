@@ -1,23 +1,21 @@
-<form action="action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+<ul>
 
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+    <li *ngFor="let item of items | async">
+      {{item.title}}
+      {{item|json}}
+  </ul>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+<button (click)="addItem()">Add Item</button>
+<button (click)="getDataByKey()">Show Item</button>
+<button (click)="updateItem()">Update Item</button>
+<button (click)="deleteEverything()">Delete All</button>
+
+
+
+<!-- https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md
+https://angularfirebase.com/snippets/query-firebase-data-with-the-angular-router/#post-object-ts
+https://angularfirebase.
+com/snippets/angularfire-migration-from-v4-to-v5-guide/
+https://angularfirebase.com/lessons/reactive-crud-app-with-angular-and-firebase-tutorial/ -->
