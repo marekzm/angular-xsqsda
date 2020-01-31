@@ -27,7 +27,7 @@ export class PostService {
 
   createPost(post: any): void  {
    this.posts.push(post)
-     .catch(error => this.handleError(error))
+    // .catch(error => this.handleError(error))
  }
 
 

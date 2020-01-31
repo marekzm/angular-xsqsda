@@ -9,12 +9,12 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
 const config = {
-    apiKey: "AIzaSyD9SAgXxdDnhcHk6scS6HVAav8z10-ibhk",
-    authDomain: "stackblitz-angular-firebase.firebaseapp.com",
-    databaseURL: "https://stackblitz-angular-firebase.firebaseio.com",
-    projectId: "stackblitz-angular-firebase",
-    storageBucket: "",
-    messagingSenderId: "453902784138"
+    apiKey: "AIzaSyDsg4LP9PLIvkDZD1lhSicd6o3Uu4YRy7Y",
+    authDomain: "test-d13b5.firebaseapp.com",
+    databaseURL: "https://test-d13b5.firebaseio.com",
+    projectId: "test-d13b5",
+    storageBucket: "test-d13b5.appspot.com",
+    messagingSenderId: "335686771339"
   };
 
 @NgModule({
