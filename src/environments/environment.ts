@@ -1,10 +1,10 @@
 export const environment = {
   firebase: {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    databaseURL: "YOUR_DATABASE_URL",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_SENDER_ID"
+    apiKey: "AIzaSyDsg4LP9PLIvkDZD1lhSicd6o3Uu4YRy7Y",
+    authDomain: "test-d13b5.firebaseapp.com",
+    databaseURL: "https://test-d13b5.firebaseio.com",
+    projectId: "est-d13b5",
+    storageBucket: "test-d13b5.appspot.com",
+    messagingSenderId: "335686771339"
   }
 };
